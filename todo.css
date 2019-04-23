@@ -1,0 +1,191 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+.div__todos{
+    width: 50%;
+    height: 100%;
+    padding: 5%;
+    background: rgba(14, 7, 70, 0.815);
+    margin: 0;
+}
+.right-side {
+    width: 50%;
+    height: 100%;
+    padding: 5%;
+    margin: 0;
+    background-color: rgba(235, 180, 2, 0.897);
+}
+.form__add{
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form__add input{
+    margin: 20px auto;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.form__input{
+    width: 60%; 
+}
+
+.form__submit {
+    width: 10%;
+    font-weight: bold;
+}
+.todo-items{
+    list-style: none;
+    background-color: white;
+    padding: 10px;
+}
+.todo-items > li{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.list__checkbox{
+    margin-right: 10px;
+    border-right: 1px solid rgba(50,0,0,0.1);
+}
+
+.div__categories{
+    display: flex;
+    flex-direction: column;
+}
+.category {
+    width: 100%;
+    margin:0px 15px 30px 15px;
+    background: rgba(219, 219, 219, 0.95);
+    border-radius: 5px;
+    box-shadow: 5px 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.category-name{
+    margin: 0px;
+}
+
+.todo-actions{
+    display: none;
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(255, 138, 29);
+    border: 1px solid rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+}
+.category-actions {
+    display: none;
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(255, 138, 29);
+    border: 1px solid rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+.category-actions > li:hover {
+    background-color: rgba(219, 219, 219, 0.95);
+    cursor: pointer;
+}
+.show{
+    display: block;
+    top:100%;
+    right: -30px;
+}
+
+.show > li:hover{
+    background-color: rgba(219, 219, 219, 0.95);
+    cursor: pointer;
+}
+
+.category-list{
+    display: none;
+}
+
+.category-list.show{
+    display: block;
+}
+
+.category-name-list {
+    display: none;
+    list-style: none;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(255, 138, 29);
+    border: 1px solid rgba(0,0,0,0.2);
+    box-sizing: border-box; 
+    padding: 5px;
+}
+.category-actions.show {
+    top:100%;
+    right: 0px;
+    margin: 0px;
+}
+.category-name-list.show {
+    display: block;
+    top:100%;
+    right: -80px;
+}
+.count-todos{
+    color: white;
+}
+
+.delete-box{
+    border: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    background-color:  rgb(219, 219, 219);
+    z-index: 10;
+    width: 40%;
+    text-align: center;
+    display: none;
+}
+
+.choose-button{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.h3--style{
+    background-color:  rgb(255, 138, 29);
+    margin: 0px auto 10px auto;
+    padding: 10px;
+} 
+.choose-button > button{
+    width: 40%;
+    background-color:  rgb(255, 138, 29);
+}
+.show-box {
+    position: absolute;
+    display: block;
+    top:40vh;
+    right: 50vh;
+}
